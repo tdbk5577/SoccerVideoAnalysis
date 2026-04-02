@@ -1,0 +1,297 @@
+Loaded 253 labels
+Using 1471 cached frames from /tmp/soccer_v2_frames
+
+Finding seed...
+  Seed (temporal avg): (np.int64(950), np.int64(546))
+Seed: frame 0 (0.0s) px=(950,546)
+
+--- Baseline v4 ---
+Time: 23.4s
+  baseline_v4                                           251/253  W30=  2  W50=  2  Med= 789.7  Score=0.0079
+
+--- Grid search v4 ---
+  Running 40 combinations...
+    10/40 done — best: score=0.0711 w50=18 med=593px
+    20/40 done — best: score=0.0711 w50=18 med=593px
+    30/40 done — best: score=0.0711 w50=18 med=593px
+    40/40 done — best: score=0.0711 w50=18 med=593px
+Grid time: 934.2s
+
+================================================================================
+  TOP 10:
+================================================================================
+  tr=40 tt=0.22 k=2 rb=110 kd=38 ss=6.0                 253/253  W30= 15  W50= 18  Med= 593.5  Score=0.0711
+  tr=50 tt=0.34 k=2 rb=80 kd=38 ss=10.0                 251/253  W30= 10  W50= 15  Med= 634.6  Score=0.0593
+  tr=35 tt=0.28 k=4 rb=60 kd=28 ss=6.0                  252/253  W30= 11  W50= 15  Med= 493.5  Score=0.0593
+  tr=40 tt=0.28 k=4 rb=60 kd=38 ss=10.0                 209/253  W30= 10  W50= 13  Med= 523.1  Score=0.0514
+  tr=35 tt=0.28 k=4 rb=110 kd=28 ss=6.0                 252/253  W30=  8  W50= 11  Med= 641.0  Score=0.0435
+  tr=50 tt=0.28 k=3 rb=80 kd=38 ss=10.0                 253/253  W30=  6  W50= 10  Med= 632.2  Score=0.0395
+  tr=40 tt=0.34 k=4 rb=60 kd=28 ss=6.0                  252/253  W30=  9  W50= 10  Med= 573.3  Score=0.0395
+  tr=35 tt=0.34 k=2 rb=80 kd=38 ss=10.0                 252/253  W30= 10  W50= 10  Med= 662.7  Score=0.0395
+  tr=35 tt=0.34 k=4 rb=60 kd=38 ss=6.0                  252/253  W30=  9  W50= 10  Med= 542.6  Score=0.0395
+  tr=35 tt=0.28 k=3 rb=110 kd=38 ss=6.0                 253/253  W30=  6  W50=  9  Med= 698.2  Score=0.0356
+
+================================================================================
+  WINNER: {'tmatch_radius': 40, 'tmatch_thresh': 0.22, 'tmatch_update_thresh': 0.42, 'tmatch_half': 12, 'max_lost_tmatch': 25, 'mot_k': 2, 'active_radius_base': 110, 'active_thresh': 0.07, 'max_lost_active': 10, 'kick_disp': 38, 'kick_search_r': 160, 'slow_speed': 6.0, 'max_hold': 30}
+  Score=0.0711  Tracked=253/253  W30=15  W50=18  Median=593.5px
+================================================================================
+
+Per-frame detail (winner):
+  frame    0: err=  17.9px  pred=( 950, 546)  gt=( 934, 554)
+  frame    5: err= 262.0px  pred=( 961, 808)  gt=( 966, 546) <-- MISS
+  frame   10: err= 275.1px  pred=( 986, 822)  gt=( 993, 547) <-- MISS
+  frame   15: err= 203.1px  pred=( 997, 750)  gt=(1003, 547) <-- MISS
+  frame   20: err=  95.0px  pred=(1001, 638)  gt=(1000, 543) <-- MISS
+  frame   25: err= 101.0px  pred=( 999, 644)  gt=(1000, 543) <-- MISS
+  frame   30: err= 191.6px  pred=(1025, 353)  gt=(1000, 543) <-- MISS
+  frame   35: err= 496.8px  pred=(1365, 206)  gt=(1000, 543) <-- MISS
+  frame   40: err= 723.6px  pred=(1631, 220)  gt=( 984, 544) <-- MISS
+  frame   45: err= 406.4px  pred=(1169, 209)  gt=( 948, 550) <-- MISS
+  frame   50: err= 726.9px  pred=( 195, 422)  gt=( 910, 553) <-- MISS
+  frame   55: err= 863.3px  pred=(  38, 386)  gt=( 885, 553) <-- MISS
+  frame   60: err= 617.0px  pred=( 274, 402)  gt=( 873, 550) <-- MISS
+  frame   65: err= 349.2px  pred=( 755, 223)  gt=( 872, 552) <-- MISS
+  frame   70: err= 347.6px  pred=( 795, 213)  gt=( 872, 552) <-- MISS
+  frame   75: err= 360.0px  pred=( 748, 214)  gt=( 872, 552) <-- MISS
+  frame   80: err= 406.5px  pred=( 674, 197)  gt=( 872, 552) <-- MISS
+  frame   85: err= 347.2px  pred=( 764, 222)  gt=( 872, 552) <-- MISS
+  frame   90: err= 490.8px  pred=( 533, 202)  gt=( 873, 556) <-- MISS
+  frame   95: err= 842.2px  pred=(  45, 402)  gt=( 873, 556) <-- MISS
+  frame  100: err= 879.4px  pred=(   7, 403)  gt=( 873, 556) <-- MISS
+  frame  105: err= 884.8px  pred=(   1, 406)  gt=( 873, 556) <-- MISS
+  frame  110: err= 840.1px  pred=(  45, 414)  gt=( 873, 556) <-- MISS
+  frame  115: err= 269.0px  pred=( 649, 407)  gt=( 873, 556) <-- MISS
+  frame  120: err= 200.7px  pred=( 830, 360)  gt=( 873, 556) <-- MISS
+  frame  125: err= 204.5px  pred=( 822, 358)  gt=( 873, 556) <-- MISS
+  frame  130: err= 260.9px  pred=( 928, 301)  gt=( 873, 556) <-- MISS
+  frame  135: err= 324.7px  pred=( 928, 236)  gt=( 873, 556) <-- MISS
+  frame  140: err= 726.5px  pred=( 186, 359)  gt=( 883, 564) <-- MISS
+  frame  145: err= 817.3px  pred=(  78, 387)  gt=( 877, 559) <-- MISS
+  frame  150: err= 762.3px  pred=( 132, 410)  gt=( 878, 567) <-- MISS
+  frame  155: err= 714.2px  pred=( 184, 407)  gt=( 880, 567) <-- MISS
+  frame  160: err= 681.7px  pred=( 215, 417)  gt=( 880, 567) <-- MISS
+  frame  165: err= 794.7px  pred=( 101, 410)  gt=( 880, 567) <-- MISS
+  frame  170: err= 735.3px  pred=( 129, 479)  gt=( 860, 558) <-- MISS
+  frame  175: err= 773.6px  pred=( 201, 230)  gt=( 903, 555) <-- MISS
+  frame  180: err=1048.9px  pred=(  98, 211)  gt=(1094, 540) <-- MISS
+  frame  185: err=1204.9px  pred=(  51, 232)  gt=(1220, 524) <-- MISS
+  frame  190: err=1179.5px  pred=(  97, 292)  gt=(1255, 516) <-- MISS
+  frame  195: err=1078.0px  pred=( 178, 223)  gt=(1216, 514) <-- MISS
+  frame  200: err=1145.5px  pred=( 174, 248)  gt=(1284, 531) <-- MISS
+  frame  205: err= 940.2px  pred=( 415, 279)  gt=(1323, 523) <-- MISS
+  frame  210: err= 627.2px  pred=( 559, 306)  gt=(1173, 434) <-- MISS
+  frame  215: err= 342.1px  pred=( 760, 250)  gt=(1066, 403) <-- MISS
+  frame  220: err= 195.5px  pred=( 904, 238)  gt=( 950, 428) <-- MISS
+  frame  225: err= 710.0px  pred=(1496, 240)  gt=( 830, 486) <-- MISS
+  frame  235: err= 444.4px  pred=(1286, 262)  gt=( 920, 514) <-- MISS
+  frame  265: err= 371.2px  pred=(1258, 239)  gt=(1478, 538) <-- MISS
+  frame  280: err= 268.0px  pred=(1207, 278)  gt=(1376, 486) <-- MISS
+  frame  290: err= 271.0px  pred=(1316, 225)  gt=(1293, 495) <-- MISS
+  frame  295: err= 286.4px  pred=(1308, 244)  gt=(1107, 448) <-- MISS
+  frame  300: err= 865.4px  pred=(1734, 234)  gt=( 888, 416) <-- MISS
+  frame  305: err=1251.1px  pred=(1917, 229)  gt=( 681, 423) <-- MISS
+  frame  310: err=1289.0px  pred=(1766, 239)  gt=( 499, 476) <-- MISS
+  frame  315: err=1154.9px  pred=(1554, 206)  gt=( 439, 507) <-- MISS
+  frame  320: err= 527.8px  pred=( 986, 434)  gt=( 463, 505) <-- MISS
+  frame  325: err=  64.0px  pred=( 407, 518)  gt=( 469, 502) <-- MISS
+  frame  330: err= 321.4px  pred=( 177, 428)  gt=( 492, 492) <-- MISS
+  frame  335: err= 118.3px  pred=( 390, 501)  gt=( 508, 493) <-- MISS
+  frame  340: err=  26.6px  pred=( 519, 502)  gt=( 528, 477)
+  frame  345: err=  23.4px  pred=( 547, 494)  gt=( 555, 472)
+  frame  350: err= 308.0px  pred=( 402, 206)  gt=( 559, 471) <-- MISS
+  frame  355: err= 276.5px  pred=( 422, 218)  gt=( 538, 469) <-- MISS
+  frame  360: err= 375.4px  pred=( 128, 386)  gt=( 492, 478) <-- MISS
+  frame  365: err= 476.1px  pred=(   1, 381)  gt=( 466, 483) <-- MISS
+  frame  370: err= 463.6px  pred=(   2, 404)  gt=( 457, 493) <-- MISS
+  frame  380: err= 342.8px  pred=( 119, 357)  gt=( 439, 480) <-- MISS
+  frame  385: err= 254.2px  pred=( 211, 337)  gt=( 434, 459) <-- MISS
+  frame  390: err= 352.2px  pred=( 683, 220)  gt=( 418, 452) <-- MISS
+  frame  395: err= 290.8px  pred=( 749, 401)  gt=( 464, 459) <-- MISS
+  frame  400: err= 517.7px  pred=(1213, 530)  gt=( 697, 488) <-- MISS
+  frame  405: err= 486.3px  pred=(1422, 490)  gt=( 936, 507) <-- MISS
+  frame  410: err= 604.3px  pred=(1462, 628)  gt=( 871, 502) <-- MISS
+  frame  420: err= 888.2px  pred=(1620, 439)  gt=( 732, 458) <-- MISS
+  frame  425: err=1151.0px  pred=(1739, 408)  gt=( 590, 476) <-- MISS
+  frame  430: err=1322.8px  pred=(1776, 380)  gt=( 458, 492) <-- MISS
+  frame  435: err=1347.1px  pred=(1669, 476)  gt=( 322, 490) <-- MISS
+  frame  440: err=1249.4px  pred=(1498, 433)  gt=( 250, 493) <-- MISS
+  frame  445: err= 585.3px  pred=( 743, 200)  gt=( 234, 489) <-- MISS
+  frame  450: err= 429.0px  pred=( 124, 201)  gt=( 412, 519) <-- MISS
+  frame  455: err= 544.9px  pred=( 121, 210)  gt=( 542, 556) <-- MISS
+  frame  460: err= 673.5px  pred=(  90, 196)  gt=( 646, 576) <-- MISS
+  frame  465: err= 507.7px  pred=( 219, 216)  gt=( 580, 573) <-- MISS
+  frame  470: err= 499.0px  pred=( 110, 231)  gt=( 486, 559) <-- MISS
+  frame  475: err= 530.2px  pred=(   7, 264)  gt=( 440, 570) <-- MISS
+  frame  480: err= 540.2px  pred=(  43, 221)  gt=( 424, 604) <-- MISS
+  frame  485: err= 507.5px  pred=(  90, 230)  gt=( 385, 643) <-- MISS
+  frame  490: err= 966.1px  pred=(  19, 217)  gt=( 842, 723) <-- MISS
+  frame  495: err=1572.4px  pred=(   0, 190)  gt=(1506, 642) <-- MISS
+  frame  500: err=1573.2px  pred=(  10, 233)  gt=(1519, 678) <-- MISS
+  frame  505: err=1559.3px  pred=(   0, 233)  gt=(1492, 686) <-- MISS
+  frame  510: err=1595.8px  pred=(   0, 233)  gt=(1521, 716) <-- MISS
+  frame  515: err=1556.5px  pred=(   0, 233)  gt=(1479, 718) <-- MISS
+  frame  520: err= 847.6px  pred=( 249, 241)  gt=( 988, 656) <-- MISS
+  frame  525: err= 514.1px  pred=( 401, 204)  gt=( 512, 706) <-- MISS
+  frame  530: err= 551.2px  pred=( 551, 200)  gt=( 291, 686) <-- MISS
+  frame  535: err= 496.8px  pred=( 609, 196)  gt=( 220, 505) <-- MISS
+  frame  540: err= 295.7px  pred=( 438, 296)  gt=( 194, 463) <-- MISS
+  frame  545: err=   5.8px  pred=( 209, 481)  gt=( 204, 478)
+  frame  550: err=  22.4px  pred=( 220, 480)  gt=( 200, 490)
+  frame  555: err=   9.2px  pred=( 305, 461)  gt=( 303, 470)
+  frame  560: err=  55.0px  pred=( 412, 506)  gt=( 387, 457) <-- MISS
+  frame  565: err=  24.2px  pred=( 436, 463)  gt=( 426, 441)
+  frame  570: err=   5.0px  pred=( 294, 451)  gt=( 290, 454)
+  frame  575: err=  79.2px  pred=( 252, 416)  gt=( 217, 487) <-- MISS
+  frame  580: err=   6.1px  pred=( 228, 475)  gt=( 229, 481)
+  frame  585: err=  12.7px  pred=( 521, 377)  gt=( 530, 386)
+  frame  590: err=  89.1px  pred=( 977, 316)  gt=( 940, 397) <-- MISS
+  frame  595: err=   8.2px  pred=(1338, 556)  gt=(1336, 564)
+  frame  600: err=   4.5px  pred=(1598, 762)  gt=(1596, 766)
+  frame  605: err=  65.9px  pred=(1703, 630)  gt=(1692, 565) <-- MISS
+  frame  610: err=   2.0px  pred=(1730, 522)  gt=(1730, 520)
+  frame  615: err= 139.5px  pred=(1626, 586)  gt=(1755, 639) <-- MISS
+  frame  620: err=  39.6px  pred=(1729, 602)  gt=(1766, 588)
+  frame  625: err=  74.5px  pred=(1772, 664)  gt=(1724, 607) <-- MISS
+  frame  630: err=  34.0px  pred=(1709, 660)  gt=(1684, 637)
+  frame  635: err=  46.6px  pred=(1603, 649)  gt=(1648, 661)
+  frame  640: err=  51.9px  pred=(1557, 654)  gt=(1603, 678) <-- MISS
+  frame  645: err=  11.7px  pred=(1514, 677)  gt=(1503, 673)
+  frame  650: err=  26.9px  pred=(1467, 694)  gt=(1442, 684)
+  frame  665: err= 177.5px  pred=(1270, 529)  gt=(1446, 506) <-- MISS
+  frame  670: err= 180.9px  pred=(1241, 518)  gt=(1412, 459) <-- MISS
+  frame  675: err= 434.3px  pred=(1140, 539)  gt=(1558, 421) <-- MISS
+  frame  680: err= 674.3px  pred=(1003, 452)  gt=(1675, 396) <-- MISS
+  frame  685: err= 823.6px  pred=( 861, 450)  gt=(1682, 385) <-- MISS
+  frame  690: err= 946.3px  pred=( 686, 441)  gt=(1630, 375) <-- MISS
+  frame  695: err=1039.8px  pred=( 536, 473)  gt=(1572, 384) <-- MISS
+  frame  700: err=1077.7px  pred=( 441, 488)  gt=(1516, 412) <-- MISS
+  frame  705: err=1006.8px  pred=( 478, 413)  gt=(1484, 454) <-- MISS
+  frame  710: err= 853.9px  pred=( 652, 311)  gt=(1490, 475) <-- MISS
+  frame  720: err= 894.0px  pred=( 644, 338)  gt=(1530, 457) <-- MISS
+  frame  725: err= 831.3px  pred=( 729, 613)  gt=(1539, 426) <-- MISS
+  frame  730: err= 896.2px  pred=( 665, 340)  gt=(1558, 416) <-- MISS
+  frame  735: err=1498.3px  pred=( 106, 199)  gt=(1587, 426) <-- MISS
+  frame  745: err=1252.6px  pred=(  47, 316)  gt=(1296, 411) <-- MISS
+  frame  755: err= 930.0px  pred=(  10, 355)  gt=( 926, 516) <-- MISS
+  frame  765: err= 848.5px  pred=( 253, 254)  gt=(1060, 516) <-- MISS
+  frame  770: err= 567.5px  pred=( 622, 195)  gt=(1098, 504) <-- MISS
+  frame  775: err= 419.9px  pred=( 762, 259)  gt=(1114, 488) <-- MISS
+  frame  780: err= 446.2px  pred=( 733, 256)  gt=(1124, 471) <-- MISS
+  frame  785: err= 479.1px  pred=( 700, 265)  gt=(1134, 468) <-- MISS
+  frame  790: err= 413.6px  pred=( 822, 224)  gt=(1150, 476) <-- MISS
+  frame  795: err= 413.1px  pred=( 815, 261)  gt=(1164, 482) <-- MISS
+  frame  800: err= 414.6px  pred=( 877, 219)  gt=(1189, 492) <-- MISS
+  frame  805: err= 457.5px  pred=( 804, 292)  gt=(1214, 495) <-- MISS
+  frame  810: err=1127.0px  pred=( 108, 584)  gt=(1232, 502) <-- MISS
+  frame  820: err=1217.4px  pred=(  10, 642)  gt=(1220, 508) <-- MISS
+  frame  825: err=1219.4px  pred=(   0, 641)  gt=(1212, 507) <-- MISS
+  frame  830: err=1217.5px  pred=(   0, 642)  gt=(1210, 507) <-- MISS
+  frame  835: err=1051.2px  pred=(  75, 575)  gt=(1124, 507) <-- MISS
+  frame  840: err= 975.7px  pred=( 119, 643)  gt=(1086, 513) <-- MISS
+  frame  845: err=1040.5px  pred=(  36, 412)  gt=(1071, 519) <-- MISS
+  frame  850: err= 506.9px  pred=( 604, 307)  gt=(1063, 522) <-- MISS
+  frame  855: err= 462.2px  pred=(1500, 395)  gt=(1058, 530) <-- MISS
+  frame  860: err= 985.2px  pred=(1859, 281)  gt=( 903, 519) <-- MISS
+  frame  865: err=1186.9px  pred=(1870, 235)  gt=( 723, 540) <-- MISS
+  frame  870: err=1289.5px  pred=(1887, 297)  gt=( 620, 537) <-- MISS
+  frame  875: err=1322.0px  pred=(1914, 264)  gt=( 619, 530) <-- MISS
+  frame  880: err=1204.7px  pred=(1882, 376)  gt=( 685, 512) <-- MISS
+  frame  885: err= 894.9px  pred=(1613, 292)  gt=( 741, 493) <-- MISS
+  frame  890: err= 959.6px  pred=(1709, 287)  gt=( 769, 480) <-- MISS
+  frame  895: err=1017.2px  pred=(1731, 262)  gt=( 739, 487) <-- MISS
+  frame  900: err=1019.4px  pred=(1677, 291)  gt=( 678, 494) <-- MISS
+  frame  905: err=1258.7px  pred=(1869, 315)  gt=( 624, 500) <-- MISS
+  frame  910: err=1288.6px  pred=(1897, 335)  gt=( 618, 492) <-- MISS
+  frame  920: err=1201.9px  pred=(1917, 309)  gt=( 723, 447) <-- MISS
+  frame  925: err=1001.9px  pred=(1757, 256)  gt=( 772, 439) <-- MISS
+  frame  930: err=1072.5px  pred=(1898, 258)  gt=( 843, 451) <-- MISS
+  frame  940: err=1067.3px  pred=(1848, 413)  gt=( 786, 519) <-- MISS
+  frame  945: err=1146.3px  pred=(1898, 387)  gt=( 759, 516) <-- MISS
+  frame  955: err=1119.3px  pred=(1843, 354)  gt=( 732, 490) <-- MISS
+  frame  960: err=1077.5px  pred=(1831, 301)  gt=( 770, 489) <-- MISS
+  frame  965: err=1118.7px  pred=(1905, 309)  gt=( 801, 490) <-- MISS
+  frame  970: err=1078.5px  pred=(1878, 275)  gt=( 822, 494) <-- MISS
+  frame 1000: err=1068.7px  pred=(1780, 517)  gt=( 712, 478) <-- MISS
+  frame 1005: err= 885.1px  pred=(1637, 486)  gt=( 752, 475) <-- MISS
+  frame 1020: err=1037.9px  pred=(1849, 529)  gt=( 812, 486) <-- MISS
+  frame 1025: err=1023.2px  pred=(1863, 503)  gt=( 840, 482) <-- MISS
+  frame 1030: err=1007.2px  pred=(1851, 502)  gt=( 844, 482) <-- MISS
+  frame 1035: err=1025.0px  pred=(1839, 485)  gt=( 814, 481) <-- MISS
+  frame 1040: err= 887.0px  pred=(1673, 405)  gt=( 789, 478) <-- MISS
+  frame 1045: err= 306.9px  pred=( 975, 249)  gt=( 760, 468) <-- MISS
+  frame 1050: err= 720.1px  pred=(  36, 215)  gt=( 716, 452) <-- MISS
+  frame 1055: err= 723.9px  pred=(   2, 222)  gt=( 687, 456) <-- MISS
+  frame 1060: err= 647.3px  pred=( 110, 201)  gt=( 705, 456) <-- MISS
+  frame 1070: err= 797.2px  pred=( 221, 230)  gt=( 993, 429) <-- MISS
+  frame 1085: err= 812.0px  pred=( 477, 208)  gt=(1254, 444) <-- MISS
+  frame 1095: err=1194.4px  pred=(  97, 389)  gt=(1290, 446) <-- MISS
+  frame 1100: err=1274.8px  pred=(  31, 396)  gt=(1305, 441) <-- MISS
+  frame 1105: err=1320.4px  pred=(  15, 380)  gt=(1334, 441) <-- MISS
+  frame 1115: err=1097.7px  pred=( 136, 363)  gt=(1230, 453) <-- MISS
+  frame 1120: err=1177.5px  pred=(   8, 383)  gt=(1183, 460) <-- MISS
+  frame 1125: err=1137.5px  pred=(  28, 430)  gt=(1165, 465) <-- MISS
+  frame 1130: err=1127.7px  pred=(  28, 432)  gt=(1155, 471) <-- MISS
+  frame 1135: err=1048.2px  pred=(  91, 409)  gt=(1137, 477) <-- MISS
+  frame 1140: err=1113.6px  pred=(  36, 417)  gt=(1147, 493) <-- MISS
+  frame 1145: err=1011.0px  pred=(  29, 380)  gt=(1032, 507) <-- MISS
+  frame 1150: err= 839.0px  pred=( 121, 207)  gt=( 901, 516) <-- MISS
+  frame 1155: err= 592.2px  pred=( 260, 223)  gt=( 778, 510) <-- MISS
+  frame 1160: err= 643.1px  pred=( 110, 402)  gt=( 745, 504) <-- MISS
+  frame 1165: err= 742.1px  pred=(   0, 626)  gt=( 732, 504) <-- MISS
+  frame 1180: err= 591.7px  pred=( 170, 256)  gt=( 709, 500) <-- MISS
+  frame 1185: err= 622.2px  pred=(  79, 314)  gt=( 674, 496) <-- MISS
+  frame 1190: err= 535.4px  pred=( 141, 316)  gt=( 648, 488) <-- MISS
+  frame 1195: err= 805.8px  pred=(   4, 382)  gt=( 801, 501) <-- MISS
+  frame 1200: err= 780.2px  pred=( 122, 301)  gt=( 878, 494) <-- MISS
+  frame 1205: err= 316.2px  pred=( 554, 195)  gt=( 673, 488) <-- MISS
+  frame 1210: err= 585.1px  pred=(1125, 487)  gt=( 540, 474) <-- MISS
+  frame 1215: err= 685.0px  pred=(1102, 337)  gt=( 430, 470) <-- MISS
+  frame 1220: err= 689.7px  pred=(1105, 342)  gt=( 426, 463) <-- MISS
+  frame 1225: err= 733.3px  pred=(1156, 302)  gt=( 442, 469) <-- MISS
+  frame 1230: err= 779.0px  pred=(1162, 248)  gt=( 415, 469) <-- MISS
+  frame 1235: err= 491.0px  pred=( 976, 267)  gt=( 554, 518) <-- MISS
+  frame 1240: err= 330.6px  pred=( 815, 286)  gt=( 616, 550) <-- MISS
+  frame 1245: err= 288.4px  pred=( 688, 291)  gt=( 644, 576) <-- MISS
+  frame 1255: err= 224.6px  pred=( 501, 330)  gt=( 518, 554) <-- MISS
+  frame 1260: err= 216.7px  pred=( 541, 335)  gt=( 568, 550) <-- MISS
+  frame 1265: err= 198.2px  pred=( 605, 360)  gt=( 688, 540) <-- MISS
+  frame 1270: err= 253.2px  pred=( 694, 360)  gt=( 898, 510) <-- MISS
+  frame 1275: err= 285.2px  pred=( 748, 415)  gt=(1022, 494) <-- MISS
+  frame 1280: err= 289.7px  pred=( 755, 360)  gt=(1004, 508) <-- MISS
+  frame 1285: err= 299.4px  pred=( 671, 410)  gt=( 951, 516) <-- MISS
+  frame 1290: err= 551.3px  pred=( 484, 305)  gt=( 997, 507) <-- MISS
+  frame 1295: err= 635.3px  pred=( 437, 325)  gt=(1048, 499) <-- MISS
+  frame 1300: err= 925.1px  pred=( 140, 365)  gt=(1054, 508) <-- MISS
+  frame 1305: err= 936.7px  pred=( 145, 360)  gt=(1069, 514) <-- MISS
+  frame 1310: err=1060.6px  pred=(  29, 385)  gt=(1081, 520) <-- MISS
+  frame 1315: err=1075.3px  pred=(  17, 345)  gt=(1078, 520) <-- MISS
+  frame 1325: err= 454.7px  pred=( 660, 424)  gt=(1104, 522) <-- MISS
+  frame 1330: err= 544.7px  pred=( 634, 439)  gt=(1171, 530) <-- MISS
+  frame 1345: err= 741.1px  pred=( 457, 203)  gt=(1125, 524) <-- MISS
+  frame 1350: err= 989.8px  pred=(  81, 263)  gt=(1036, 523) <-- MISS
+  frame 1360: err= 564.4px  pred=( 465, 245)  gt=( 955, 525) <-- MISS
+  frame 1365: err= 334.1px  pred=( 774, 222)  gt=( 925, 520) <-- MISS
+  frame 1370: err= 373.1px  pred=( 696, 240)  gt=( 938, 524) <-- MISS
+  frame 1375: err= 213.7px  pred=( 776, 635)  gt=( 958, 523) <-- MISS
+  frame 1380: err= 370.9px  pred=( 822, 853)  gt=( 979, 517) <-- MISS
+  frame 1390: err= 372.0px  pred=( 873, 892)  gt=( 871, 520) <-- MISS
+  frame 1395: err= 390.6px  pred=( 891, 896)  gt=( 789, 519) <-- MISS
+  frame 1400: err= 171.5px  pred=( 910, 541)  gt=( 740, 518) <-- MISS
+  frame 1410: err= 545.9px  pred=( 902,   0)  gt=(1086, 514) <-- MISS
+  frame 1415: err= 393.9px  pred=( 917, 238)  gt=(1194, 518) <-- MISS
+  frame 1420: err= 518.3px  pred=( 784, 755)  gt=(1246, 520) <-- MISS
+  frame 1425: err= 564.2px  pred=( 710, 235)  gt=(1201, 513) <-- MISS
+  frame 1430: err= 435.6px  pred=( 866, 216)  gt=(1179, 519) <-- MISS
+  frame 1435: err= 495.6px  pred=( 771, 203)  gt=(1152, 520) <-- MISS
+  frame 1440: err= 499.1px  pred=( 751, 195)  gt=(1128, 522) <-- MISS
+  frame 1445: err= 507.1px  pred=( 677, 201)  gt=(1072, 519) <-- MISS
+  frame 1450: err= 593.5px  pred=( 578, 241)  gt=(1108, 508) <-- MISS
+  frame 1455: err= 676.5px  pred=( 545, 230)  gt=(1159, 514) <-- MISS
+  frame 1460: err= 866.5px  pred=( 375, 227)  gt=(1194, 510) <-- MISS
+  frame 1465: err= 876.7px  pred=( 435, 206)  gt=(1258, 508) <-- MISS
+  frame 1470: err= 924.1px  pred=( 423, 201)  gt=(1296, 504) <-- MISS
+
+Saved to tracking_analysis_v4.txt
+
+Rendering tracking_v4_winner.mp4...
+Saved tracking_v4_winner.mp4  (green=pred, red=gt)

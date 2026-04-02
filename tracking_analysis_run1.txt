@@ -1,0 +1,311 @@
+Loaded 253 ground-truth labels
+Extracting frames to /var/folders/mw/g842lt113y31ly0n3ggd_j8r0000gn/T/soccer_frames_4m65e0jt ...
+Extracted 1471 frames
+Frames dir saved to frames_dir.txt — reuse with --frames-dir /var/folders/mw/g842lt113y31ly0n3ggd_j8r0000gn/T/soccer_frames_4m65e0jt
+
+Finding seed position...
+Seed: frame 0 (0.0s) px=(950,546)
+
+Building and running 30 tracking methods...
+
+
+========================================================================
+  RESULTS (sorted by score = coverage × within50_rate)
+========================================================================
+  Method                              Tracked   W30   W50    Med   Score
+  ----------------------------------- ------- ----- ----- ------ -------
+  hough_static_r80                     92/253     5     6  427.7   0.024
+  velocity_boost                        9/253     2     5   37.4   0.020
+  combined_r80_t08                     31/253     2     5  103.6   0.020
+  combined_linear3_r100                25/253     2     5  107.2   0.020
+  motion_bright_r60_t10                 6/253     2     4   34.8   0.016
+  motion_bright_r80_t10                 6/253     2     4   35.6   0.016
+  motion_bright_r80_t15                 6/253     2     4   35.6   0.016
+  combined_r80_t10                      6/253     2     4   35.6   0.016
+  hough_motion_r120                    19/253     3     4  776.3   0.016
+  combined_wide_adapt100               48/253     1     4  419.1   0.016
+  hough_motion_r80                     22/253     3     3  112.9   0.012
+  combined_avgvel4_r100                 8/253     2     3  127.0   0.012
+  motion_only_r80                      10/253     1     1  363.1   0.004
+  motion_bright_r120_t10                8/253     1     1  224.1   0.004
+  motion_bright_r120_t15                8/253     1     1  224.1   0.004
+  motion_bright_r150_t10               11/253     1     1  441.4   0.004
+  motion_bright_adapt60_t10            16/253     1     1  351.9   0.004
+  motion_bright_adapt80_t10            45/253     1     1  364.2   0.004
+  motion_bright_adapt80_t08            34/253     1     1  166.9   0.004
+  combined_r120_t08                     8/253     1     1  224.1   0.004
+  combined_r120_t10                     8/253     1     1  224.1   0.004
+  combined_adapt80_t08                 27/253     1     1  350.0   0.004
+  combined_adapt100_t08                 8/253     1     1  274.6   0.004
+  motion_only_r120                     11/253     1     1  423.6   0.004
+  bright_nongeen_r80                   32/253     1     1  104.0   0.004
+  mog2_r80                              6/253     1     1  296.2   0.004
+  two_stage_adaptive                    9/253     1     1  245.1   0.004
+  opencv_CSRT                           0/253     0     0 9999.0   0.000
+  opencv_KCF                            0/253     0     0 9999.0   0.000
+  opencv_MOSSE                          0/253     0     0 9999.0   0.000
+
+========================================================================
+  WINNER: hough_static_r80
+  Score=0.024  Tracked=92/253  Within30=5  Median=427.7px
+========================================================================
+
+  Per-frame detail (winner):
+    frame   0: err= 17.9px  pred=( 950, 546)  gt=( 934, 554)
+    frame   5: err=  2.0px  pred=( 968, 546)  gt=( 966, 546)
+    frame  10: err=  5.1px  pred=( 992, 542)  gt=( 993, 547)
+    frame  15: err=  5.1px  pred=(1004, 542)  gt=(1003, 547)
+    frame  20: err=  9.4px  pred=(1008, 538)  gt=(1000, 543)
+    frame  25: err=103.1px  pred=( 996, 440)  gt=(1000, 543) <-- MISS
+    frame  30: err=192.0px  pred=( 966, 354)  gt=(1000, 543) <-- MISS
+    frame  35: err=191.4px  pred=( 970, 354)  gt=(1000, 543) <-- MISS
+    frame  40: err=195.7px  pred=(1022, 352)  gt=( 984, 544) <-- MISS
+    frame  45: err=206.5px  pred=( 980, 346)  gt=( 948, 550) <-- MISS
+    frame  50: err=205.8px  pred=( 954, 352)  gt=( 910, 553) <-- MISS
+    frame  55: err=202.1px  pred=( 906, 352)  gt=( 885, 553) <-- MISS
+    frame  60: err=209.4px  pred=( 818, 348)  gt=( 873, 550) <-- MISS
+    frame  65: err=202.1px  pred=( 878, 350)  gt=( 872, 552) <-- MISS
+    frame  70: err=212.2px  pred=( 914, 344)  gt=( 872, 552) <-- MISS
+    frame  75: err=215.9px  pred=( 922, 342)  gt=( 872, 552) <-- MISS
+    frame  80: err=204.2px  pred=( 864, 348)  gt=( 872, 552) <-- MISS
+    frame  85: err=209.6px  pred=( 824, 348)  gt=( 872, 552) <-- MISS
+    frame  90: err=208.0px  pred=( 872, 348)  gt=( 873, 556) <-- MISS
+    frame  95: err=214.8px  pred=( 918, 346)  gt=( 873, 556) <-- MISS
+    frame 100: err=200.0px  pred=( 874, 356)  gt=( 873, 556) <-- MISS
+    frame 105: err=210.8px  pred=( 820, 352)  gt=( 873, 556) <-- MISS
+    frame 110: err=212.0px  pred=( 832, 348)  gt=( 873, 556) <-- MISS
+    frame 115: err=200.6px  pred=( 858, 356)  gt=( 873, 556) <-- MISS
+    frame 120: err=207.9px  pred=( 922, 354)  gt=( 873, 556) <-- MISS
+    frame 125: err=205.8px  pred=( 900, 352)  gt=( 873, 556) <-- MISS
+    frame 130: err=204.0px  pred=( 870, 352)  gt=( 873, 556) <-- MISS
+    frame 135: err=201.1px  pred=( 828, 360)  gt=( 873, 556) <-- MISS
+    frame 140: err=211.3px  pred=( 846, 356)  gt=( 883, 564) <-- MISS
+    frame 145: err=211.2px  pred=( 928, 354)  gt=( 877, 559) <-- MISS
+    frame 150: err=222.3px  pred=( 840, 348)  gt=( 878, 567) <-- MISS
+    frame 155: err=215.9px  pred=( 826, 358)  gt=( 880, 567) <-- MISS
+    frame 160: err=217.4px  pred=( 820, 358)  gt=( 880, 567) <-- MISS
+    frame 165: err=224.6px  pred=( 822, 350)  gt=( 880, 567) <-- MISS
+    frame 170: err=204.5px  pred=( 892, 356)  gt=( 860, 558) <-- MISS
+    frame 175: err=209.9px  pred=( 868, 348)  gt=( 903, 555) <-- MISS
+    frame 180: err=431.3px  pred=( 714, 336)  gt=(1094, 540) <-- MISS
+    frame 185: err=597.1px  pred=( 656, 328)  gt=(1220, 524) <-- MISS
+    frame 190: err=642.5px  pred=( 640, 330)  gt=(1255, 516) <-- MISS
+    frame 195: err=537.1px  pred=( 710, 334)  gt=(1216, 514) <-- MISS
+    frame 200: err=446.3px  pred=( 876, 350)  gt=(1284, 531) <-- MISS
+    frame 205: err=337.7px  pred=(1022, 370)  gt=(1323, 523) <-- MISS
+    frame 210: err= 32.0px  pred=(1162, 404)  gt=(1173, 434)
+    frame 215: err=254.9px  pred=(1320, 424)  gt=(1066, 403) <-- MISS
+    frame 220: err=424.0px  pred=(1374, 424)  gt=( 950, 428) <-- MISS
+    frame 225: err=591.5px  pred=(1418, 422)  gt=( 830, 486) <-- MISS
+    frame 235: err=524.4px  pred=(1434, 410)  gt=( 920, 514) <-- MISS
+    frame 265: err=396.7px  pred=(1804, 764)  gt=(1478, 538) <-- MISS
+    frame 280: err=542.4px  pred=(1918, 464)  gt=(1376, 486) <-- MISS
+    frame 290: err=621.1px  pred=(1914, 482)  gt=(1293, 495) <-- MISS
+    frame 295: err=815.2px  pred=(1920, 508)  gt=(1107, 448) <-- MISS
+    frame 300: err=1025.3px  pred=(1908, 520)  gt=( 888, 416) <-- MISS
+    frame 305: err=1234.0px  pred=(1910, 534)  gt=( 681, 423) <-- MISS
+    frame 310: err=1417.9px  pred=(1916, 526)  gt=( 499, 476) <-- MISS
+    frame 315: err=1475.0px  pred=(1914, 514)  gt=( 439, 507) <-- MISS
+    frame 320: err=1295.1px  pred=(1758, 486)  gt=( 463, 505) <-- MISS
+    frame 325: err=1097.6px  pred=(1566, 466)  gt=( 469, 502) <-- MISS
+    frame 330: err=1112.7px  pred=(1604, 452)  gt=( 492, 492) <-- MISS
+    frame 335: err=1105.1px  pred=(1612, 444)  gt=( 508, 493) <-- MISS
+    frame 340: err=1123.1px  pred=(1650, 428)  gt=( 528, 477) <-- MISS
+    frame 345: err=1091.9px  pred=(1646, 428)  gt=( 555, 472) <-- MISS
+    frame 350: err=1056.3px  pred=(1614, 418)  gt=( 559, 471) <-- MISS
+    frame 355: err=1045.1px  pred=(1582, 422)  gt=( 538, 469) <-- MISS
+    frame 360: err=1045.4px  pred=(1536, 424)  gt=( 492, 478) <-- MISS
+    frame 365: err=1071.4px  pred=(1536, 428)  gt=( 466, 483) <-- MISS
+    frame 370: err=1086.9px  pred=(1542, 428)  gt=( 457, 493) <-- MISS
+    frame 380: err=1290.0px  pred=(1726, 392)  gt=( 439, 480) <-- MISS
+    frame 385: err=1442.9px  pred=(1874, 368)  gt=( 434, 459) <-- MISS
+    frame 390: err=1473.5px  pred=(1888, 350)  gt=( 418, 452) <-- MISS
+    frame 395: err=1457.8px  pred=(1918, 354)  gt=( 464, 459) <-- MISS
+    frame 400: err=1203.4px  pred=(1894, 364)  gt=( 697, 488) <-- MISS
+    frame 405: err=969.2px  pred=(1896, 374)  gt=( 936, 507) <-- MISS
+    frame 410: err=1055.8px  pred=(1918, 366)  gt=( 871, 502) <-- MISS
+    frame 420: err=833.9px  pred=(1544, 268)  gt=( 732, 458) <-- MISS
+    frame 425: err=706.0px  pred=(1254, 236)  gt=( 590, 476) <-- MISS
+    frame 430: err=472.8px  pred=( 870, 260)  gt=( 458, 492) <-- MISS
+    frame 435: err=234.0px  pred=( 396, 268)  gt=( 322, 490) <-- MISS
+    frame 440: err=338.9px  pred=(   2, 262)  gt=( 250, 493) <-- MISS
+    frame 445: err=301.9px  pred=(  22, 274)  gt=( 234, 489) <-- MISS
+    frame 450: err=461.5px  pred=(   8, 296)  gt=( 412, 519) <-- MISS
+    frame 455: err=601.6px  pred=( 136, 112)  gt=( 542, 556) <-- MISS
+    frame 460: err=705.1px  pred=( 172,  54)  gt=( 646, 576) <-- MISS
+    frame 465: err=751.9px  pred=(  34,  56)  gt=( 580, 573) <-- MISS
+    frame 470: err=626.3px  pred=(  26, 134)  gt=( 486, 559) <-- MISS
+    frame 475: err=591.8px  pred=(   2, 172)  gt=( 440, 570) <-- MISS
+    frame 480: err=588.6px  pred=( 104, 110)  gt=( 424, 604) <-- MISS
+    frame 485: err=493.1px  pred=( 296, 158)  gt=( 385, 643) <-- MISS
+    frame 490: err=308.5px  pred=( 684, 458)  gt=( 842, 723) <-- MISS
+    frame 495: err=275.6px  pred=(1256, 758)  gt=(1506, 642) <-- MISS
+    frame 500: err=512.6px  pred=(1842,1076)  gt=(1519, 678) <-- MISS
+    frame 505: err=1076.2px  pred=(2342,1346)  gt=(1492, 686) <-- MISS
+    frame 510: err=1598.4px  pred=(2842,1616)  gt=(1521, 716) <-- MISS
+    frame 515: NOT TRACKED  gt=(1479,718)
+    frame 520: NOT TRACKED  gt=(988,656)
+    frame 525: NOT TRACKED  gt=(512,706)
+    frame 530: NOT TRACKED  gt=(291,686)
+    frame 535: NOT TRACKED  gt=(220,505)
+    frame 540: NOT TRACKED  gt=(194,463)
+    frame 545: NOT TRACKED  gt=(204,478)
+    frame 550: NOT TRACKED  gt=(200,490)
+    frame 555: NOT TRACKED  gt=(303,470)
+    frame 560: NOT TRACKED  gt=(387,457)
+    frame 565: NOT TRACKED  gt=(426,441)
+    frame 570: NOT TRACKED  gt=(290,454)
+    frame 575: NOT TRACKED  gt=(217,487)
+    frame 580: NOT TRACKED  gt=(229,481)
+    frame 585: NOT TRACKED  gt=(530,386)
+    frame 590: NOT TRACKED  gt=(940,397)
+    frame 595: NOT TRACKED  gt=(1336,564)
+    frame 600: NOT TRACKED  gt=(1596,766)
+    frame 605: NOT TRACKED  gt=(1692,565)
+    frame 610: NOT TRACKED  gt=(1730,520)
+    frame 615: NOT TRACKED  gt=(1755,639)
+    frame 620: NOT TRACKED  gt=(1766,588)
+    frame 625: NOT TRACKED  gt=(1724,607)
+    frame 630: NOT TRACKED  gt=(1684,637)
+    frame 635: NOT TRACKED  gt=(1648,661)
+    frame 640: NOT TRACKED  gt=(1603,678)
+    frame 645: NOT TRACKED  gt=(1503,673)
+    frame 650: NOT TRACKED  gt=(1442,684)
+    frame 665: NOT TRACKED  gt=(1446,506)
+    frame 670: NOT TRACKED  gt=(1412,459)
+    frame 675: NOT TRACKED  gt=(1558,421)
+    frame 680: NOT TRACKED  gt=(1675,396)
+    frame 685: NOT TRACKED  gt=(1682,385)
+    frame 690: NOT TRACKED  gt=(1630,375)
+    frame 695: NOT TRACKED  gt=(1572,384)
+    frame 700: NOT TRACKED  gt=(1516,412)
+    frame 705: NOT TRACKED  gt=(1484,454)
+    frame 710: NOT TRACKED  gt=(1490,475)
+    frame 720: NOT TRACKED  gt=(1530,457)
+    frame 725: NOT TRACKED  gt=(1539,426)
+    frame 730: NOT TRACKED  gt=(1558,416)
+    frame 735: NOT TRACKED  gt=(1587,426)
+    frame 745: NOT TRACKED  gt=(1296,411)
+    frame 755: NOT TRACKED  gt=(926,516)
+    frame 765: NOT TRACKED  gt=(1060,516)
+    frame 770: NOT TRACKED  gt=(1098,504)
+    frame 775: NOT TRACKED  gt=(1114,488)
+    frame 780: NOT TRACKED  gt=(1124,471)
+    frame 785: NOT TRACKED  gt=(1134,468)
+    frame 790: NOT TRACKED  gt=(1150,476)
+    frame 795: NOT TRACKED  gt=(1164,482)
+    frame 800: NOT TRACKED  gt=(1189,492)
+    frame 805: NOT TRACKED  gt=(1214,495)
+    frame 810: NOT TRACKED  gt=(1232,502)
+    frame 820: NOT TRACKED  gt=(1220,508)
+    frame 825: NOT TRACKED  gt=(1212,507)
+    frame 830: NOT TRACKED  gt=(1210,507)
+    frame 835: NOT TRACKED  gt=(1124,507)
+    frame 840: NOT TRACKED  gt=(1086,513)
+    frame 845: NOT TRACKED  gt=(1071,519)
+    frame 850: NOT TRACKED  gt=(1063,522)
+    frame 855: NOT TRACKED  gt=(1058,530)
+    frame 860: NOT TRACKED  gt=(903,519)
+    frame 865: NOT TRACKED  gt=(723,540)
+    frame 870: NOT TRACKED  gt=(620,537)
+    frame 875: NOT TRACKED  gt=(619,530)
+    frame 880: NOT TRACKED  gt=(685,512)
+    frame 885: NOT TRACKED  gt=(741,493)
+    frame 890: NOT TRACKED  gt=(769,480)
+    frame 895: NOT TRACKED  gt=(739,487)
+    frame 900: NOT TRACKED  gt=(678,494)
+    frame 905: NOT TRACKED  gt=(624,500)
+    frame 910: NOT TRACKED  gt=(618,492)
+    frame 920: NOT TRACKED  gt=(723,447)
+    frame 925: NOT TRACKED  gt=(772,439)
+    frame 930: NOT TRACKED  gt=(843,451)
+    frame 940: NOT TRACKED  gt=(786,519)
+    frame 945: NOT TRACKED  gt=(759,516)
+    frame 955: NOT TRACKED  gt=(732,490)
+    frame 960: NOT TRACKED  gt=(770,489)
+    frame 965: NOT TRACKED  gt=(801,490)
+    frame 970: NOT TRACKED  gt=(822,494)
+    frame 1000: NOT TRACKED  gt=(712,478)
+    frame 1005: NOT TRACKED  gt=(752,475)
+    frame 1020: NOT TRACKED  gt=(812,486)
+    frame 1025: NOT TRACKED  gt=(840,482)
+    frame 1030: NOT TRACKED  gt=(844,482)
+    frame 1035: NOT TRACKED  gt=(814,481)
+    frame 1040: NOT TRACKED  gt=(789,478)
+    frame 1045: NOT TRACKED  gt=(760,468)
+    frame 1050: NOT TRACKED  gt=(716,452)
+    frame 1055: NOT TRACKED  gt=(687,456)
+    frame 1060: NOT TRACKED  gt=(705,456)
+    frame 1070: NOT TRACKED  gt=(993,429)
+    frame 1085: NOT TRACKED  gt=(1254,444)
+    frame 1095: NOT TRACKED  gt=(1290,446)
+    frame 1100: NOT TRACKED  gt=(1305,441)
+    frame 1105: NOT TRACKED  gt=(1334,441)
+    frame 1115: NOT TRACKED  gt=(1230,453)
+    frame 1120: NOT TRACKED  gt=(1183,460)
+    frame 1125: NOT TRACKED  gt=(1165,465)
+    frame 1130: NOT TRACKED  gt=(1155,471)
+    frame 1135: NOT TRACKED  gt=(1137,477)
+    frame 1140: NOT TRACKED  gt=(1147,493)
+    frame 1145: NOT TRACKED  gt=(1032,507)
+    frame 1150: NOT TRACKED  gt=(901,516)
+    frame 1155: NOT TRACKED  gt=(778,510)
+    frame 1160: NOT TRACKED  gt=(745,504)
+    frame 1165: NOT TRACKED  gt=(732,504)
+    frame 1180: NOT TRACKED  gt=(709,500)
+    frame 1185: NOT TRACKED  gt=(674,496)
+    frame 1190: NOT TRACKED  gt=(648,488)
+    frame 1195: NOT TRACKED  gt=(801,501)
+    frame 1200: NOT TRACKED  gt=(878,494)
+    frame 1205: NOT TRACKED  gt=(673,488)
+    frame 1210: NOT TRACKED  gt=(540,474)
+    frame 1215: NOT TRACKED  gt=(430,470)
+    frame 1220: NOT TRACKED  gt=(426,463)
+    frame 1225: NOT TRACKED  gt=(442,469)
+    frame 1230: NOT TRACKED  gt=(415,469)
+    frame 1235: NOT TRACKED  gt=(554,518)
+    frame 1240: NOT TRACKED  gt=(616,550)
+    frame 1245: NOT TRACKED  gt=(644,576)
+    frame 1255: NOT TRACKED  gt=(518,554)
+    frame 1260: NOT TRACKED  gt=(568,550)
+    frame 1265: NOT TRACKED  gt=(688,540)
+    frame 1270: NOT TRACKED  gt=(898,510)
+    frame 1275: NOT TRACKED  gt=(1022,494)
+    frame 1280: NOT TRACKED  gt=(1004,508)
+    frame 1285: NOT TRACKED  gt=(951,516)
+    frame 1290: NOT TRACKED  gt=(997,507)
+    frame 1295: NOT TRACKED  gt=(1048,499)
+    frame 1300: NOT TRACKED  gt=(1054,508)
+    frame 1305: NOT TRACKED  gt=(1069,514)
+    frame 1310: NOT TRACKED  gt=(1081,520)
+    frame 1315: NOT TRACKED  gt=(1078,520)
+    frame 1325: NOT TRACKED  gt=(1104,522)
+    frame 1330: NOT TRACKED  gt=(1171,530)
+    frame 1345: NOT TRACKED  gt=(1125,524)
+    frame 1350: NOT TRACKED  gt=(1036,523)
+    frame 1360: NOT TRACKED  gt=(955,525)
+    frame 1365: NOT TRACKED  gt=(925,520)
+    frame 1370: NOT TRACKED  gt=(938,524)
+    frame 1375: NOT TRACKED  gt=(958,523)
+    frame 1380: NOT TRACKED  gt=(979,517)
+    frame 1390: NOT TRACKED  gt=(871,520)
+    frame 1395: NOT TRACKED  gt=(789,519)
+    frame 1400: NOT TRACKED  gt=(740,518)
+    frame 1410: NOT TRACKED  gt=(1086,514)
+    frame 1415: NOT TRACKED  gt=(1194,518)
+    frame 1420: NOT TRACKED  gt=(1246,520)
+    frame 1425: NOT TRACKED  gt=(1201,513)
+    frame 1430: NOT TRACKED  gt=(1179,519)
+    frame 1435: NOT TRACKED  gt=(1152,520)
+    frame 1440: NOT TRACKED  gt=(1128,522)
+    frame 1445: NOT TRACKED  gt=(1072,519)
+    frame 1450: NOT TRACKED  gt=(1108,508)
+    frame 1455: NOT TRACKED  gt=(1159,514)
+    frame 1460: NOT TRACKED  gt=(1194,510)
+    frame 1465: NOT TRACKED  gt=(1258,508)
+    frame 1470: NOT TRACKED  gt=(1296,504)
+
+Results saved to tracking_analysis.txt
+
+Rendering winner tracking video...
+Saved: tracking_winner_hough_static_r80.mp4  (green=predicted, red=ground truth)

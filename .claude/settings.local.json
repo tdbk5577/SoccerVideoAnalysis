@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python3 analyze_tracking_v3.py --video Test.mp4 --labels ball_labels.json --render)",
+      "Bash(tee tracking_analysis_v3_run1.txt)",
+      "Bash(.venv/bin/python3 analyze_tracking_v4.py --video Test.mp4 --labels ball_labels.json --frames-dir /tmp/soccer_v2_frames --render)",
+      "Bash(tee tracking_analysis_v4_run1.txt)",
+      "Bash(wait 27824 27899)",
+      "Bash(.venv/bin/python3 analyze_tracking_v5.py --video Test.mp4 --labels ball_labels.json --frames-dir /tmp/soccer_v2_frames --render)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(while ps:*)",
+      "Bash(do sleep:*)",
+      "Bash(done)"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+Winner: hough_static_r80
+Score: 0.0237
+Tracked: 92/253
+Within30: 5
+Within50: 6
+Median error: 427.7px
+
+All methods:
+  hough_static_r80: score=0.024 tracked=92/253 w30=5 w50=6 median=427.7
+  velocity_boost: score=0.020 tracked=9/253 w30=2 w50=5 median=37.4
+  combined_r80_t08: score=0.020 tracked=31/253 w30=2 w50=5 median=103.6
+  combined_linear3_r100: score=0.020 tracked=25/253 w30=2 w50=5 median=107.2
+  motion_bright_r60_t10: score=0.016 tracked=6/253 w30=2 w50=4 median=34.8
+  motion_bright_r80_t10: score=0.016 tracked=6/253 w30=2 w50=4 median=35.6
+  motion_bright_r80_t15: score=0.016 tracked=6/253 w30=2 w50=4 median=35.6
+  combined_r80_t10: score=0.016 tracked=6/253 w30=2 w50=4 median=35.6
+  hough_motion_r120: score=0.016 tracked=19/253 w30=3 w50=4 median=776.3
+  combined_wide_adapt100: score=0.016 tracked=48/253 w30=1 w50=4 median=419.1
+  hough_motion_r80: score=0.012 tracked=22/253 w30=3 w50=3 median=112.9
+  combined_avgvel4_r100: score=0.012 tracked=8/253 w30=2 w50=3 median=127.0
+  motion_only_r80: score=0.004 tracked=10/253 w30=1 w50=1 median=363.1
+  motion_bright_r120_t10: score=0.004 tracked=8/253 w30=1 w50=1 median=224.1
+  motion_bright_r120_t15: score=0.004 tracked=8/253 w30=1 w50=1 median=224.1
+  motion_bright_r150_t10: score=0.004 tracked=11/253 w30=1 w50=1 median=441.4
+  motion_bright_adapt60_t10: score=0.004 tracked=16/253 w30=1 w50=1 median=351.9
+  motion_bright_adapt80_t10: score=0.004 tracked=45/253 w30=1 w50=1 median=364.2
+  motion_bright_adapt80_t08: score=0.004 tracked=34/253 w30=1 w50=1 median=166.9
+  combined_r120_t08: score=0.004 tracked=8/253 w30=1 w50=1 median=224.1
+  combined_r120_t10: score=0.004 tracked=8/253 w30=1 w50=1 median=224.1
+  combined_adapt80_t08: score=0.004 tracked=27/253 w30=1 w50=1 median=350.0
+  combined_adapt100_t08: score=0.004 tracked=8/253 w30=1 w50=1 median=274.6
+  motion_only_r120: score=0.004 tracked=11/253 w30=1 w50=1 median=423.6
+  bright_nongeen_r80: score=0.004 tracked=32/253 w30=1 w50=1 median=104.0
+  mog2_r80: score=0.004 tracked=6/253 w30=1 w50=1 median=296.2
+  two_stage_adaptive: score=0.004 tracked=9/253 w30=1 w50=1 median=245.1
+  opencv_CSRT: score=0.000 tracked=0/253 w30=0 w50=0 median=9999.0
+  opencv_KCF: score=0.000 tracked=0/253 w30=0 w50=0 median=9999.0
+  opencv_MOSSE: score=0.000 tracked=0/253 w30=0 w50=0 median=9999.0
