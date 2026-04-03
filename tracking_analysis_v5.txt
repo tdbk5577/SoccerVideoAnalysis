@@ -1,23 +1,23 @@
-V5 Winner: score=0.0883 w30=21 w50=25 med=544.7
-Params: {'s_max': 40, 'v_min': 175, 'area_min': 110, 'area_max': 650, 'max_aspect': 4.0, 'kalman_q': 4.0, 'kalman_r': 20, 'search_r_base': 160, 'search_r_max': 340, 'min_score': 0.2, 'max_lost_slow': 6, 'max_lost_fast': 8, 'mot_k': 4}
+V5b Winner: score=0.0843 w30=21 w50=22 med=445.9
+Params: {'s_max': 40, 'v_min': 180, 'area_min': 90, 'area_max': 1000, 'max_aspect': 2.5, 'q_slow': 1.5, 'r_slow': 100, 'q_fast': 2.0, 'r_fast': 40, 'sr_tight': 48, 'sr_base': 100, 'sr_max': 240, 'slow_speed': 4.0, 'max_lost_slow': 3, 'max_lost_fast': 4, 'max_lost_lost': 30, 'min_score': 0.16, 'mot_k': 3, 'kick_search_r': 280, 'kick_min_disp': 25}
 
-0.0883  W30=21  W50=25  Med=544.7  sm=40 vm=175 am=110 aM=650 q=4.0 r=20 sr=160 ms=0.20 k=4
-0.0870  W30=21  W50=24  Med=539.2  sm=40 vm=165 am=90 aM=500 q=1.0 r=80 sr=80 ms=0.12 k=2
-0.0843  W30=21  W50=22  Med=646.1  sm=35 vm=180 am=70 aM=500 q=1.0 r=150 sr=100 ms=0.12 k=3
-0.0817  W30=20  W50=22  Med=394.8  sm=30 vm=175 am=110 aM=650 q=8.0 r=80 sr=130 ms=0.25 k=3
-0.0804  W30=20  W50=21  Med=665.5  sm=30 vm=160 am=70 aM=1000 q=1.0 r=20 sr=160 ms=0.12 k=2
-0.0764  W30=19  W50=20  Med=556.6  sm=30 vm=185 am=70 aM=500 q=1.0 r=80 sr=100 ms=0.30 k=2
-0.0764  W30=19  W50=20  Med=611.1  sm=35 vm=160 am=90 aM=1000 q=1.0 r=250 sr=80 ms=0.25 k=4
-0.0725  W30=18  W50=19  Med=743.5  sm=30 vm=165 am=70 aM=800 q=4.0 r=40 sr=130 ms=0.25 k=3
-0.0725  W30=18  W50=19  Med=438.9  sm=30 vm=185 am=110 aM=500 q=0.5 r=20 sr=160 ms=0.12 k=3
-0.0698  W30=17  W50=19  Med=564.5  sm=30 vm=180 am=100 aM=550 q=0.8 r=30 sr=65 ms=0.25 k=2
-0.0685  W30=16  W50=20  Med=525.0  sm=40 vm=180 am=110 aM=800 q=2.0 r=80 sr=100 ms=0.25 k=4
-0.0646  W30=16  W50=17  Med=501.9  sm=35 vm=160 am=110 aM=1000 q=8.0 r=20 sr=100 ms=0.25 k=2
-0.0646  W30=16  W50=17  Med=421.4  sm=30 vm=170 am=110 aM=500 q=2.0 r=80 sr=60 ms=0.20 k=4
-0.0619  W30=15  W50=17  Med=503.7  sm=30 vm=165 am=110 aM=800 q=1.0 r=20 sr=80 ms=0.20 k=3
-0.0619  W30=15  W50=17  Med=572.8  sm=40 vm=180 am=110 aM=1000 q=0.5 r=150 sr=100 ms=0.25 k=2
-0.0606  W30=15  W50=16  Med=592.3  sm=30 vm=180 am=50 aM=1000 q=4.0 r=20 sr=100 ms=0.12 k=2
-0.0580  W30=14  W50=16  Med=484.0  sm=55 vm=155 am=50 aM=1000 q=4.0 r=120 sr=140 ms=0.14 k=3
-0.0527  W30=12  W50=16  Med=582.7  sm=50 vm=180 am=70 aM=800 q=2.0 r=250 sr=80 ms=0.25 k=4
-0.0474  W30=12  W50=12  Med=735.7  sm=35 vm=175 am=90 aM=1000 q=1.0 r=150 sr=130 ms=0.16 k=2
-0.0461  W30=11  W50=13  Med=714.5  sm=30 vm=180 am=50 aM=800 q=0.5 r=80 sr=100 ms=0.30 k=2
+0.0843  W30=21  W50=22  Med=445.9  st=48 sb=100 ss=4.0 qs=1.5 rs=100 qf=2.0 rf=40 sm=40 vm=180 k=3
+0.0685  W30=17  W50=18  Med=523.9  st=55 sb=80 ss=10.0 qs=0.4 rs=100 qf=2.0 rf=70 sm=30 vm=155 k=2
+0.0672  W30=17  W50=17  Med=446.3  st=40 sb=60 ss=8.0 qs=0.4 rs=100 qf=2.0 rf=40 sm=30 vm=165 k=2
+0.0593  W30=15  W50=15  Med=514.0  st=25 sb=60 ss=10.0 qs=0.8 rs=10 qf=4.0 rf=70 sm=35 vm=165 k=4
+0.0553  W30=14  W50=14  Med=444.7  st=48 sb=60 ss=5.0 qs=0.8 rs=10 qf=6.0 rf=200 sm=30 vm=175 k=4
+0.0527  W30=13  W50=14  Med=498.8  st=30 sb=100 ss=5.0 qs=0.1 rs=20 qf=4.0 rf=40 sm=45 vm=170 k=4
+0.0487  W30=12  W50=13  Med=472.1  st=55 sb=80 ss=5.0 qs=0.8 rs=100 qf=10.0 rf=40 sm=45 vm=160 k=3
+0.0461  W30=11  W50=13  Med=538.2  st=30 sb=100 ss=10.0 qs=1.5 rs=60 qf=2.0 rf=40 sm=45 vm=165 k=3
+0.0435  W30=11  W50=11  Med=612.5  st=40 sb=80 ss=6.0 qs=0.3 rs=30 qf=4.0 rf=80 sm=42 vm=168 k=3
+0.0435  W30=11  W50=11  Med=491.5  st=45 sb=100 ss=8.0 qs=0.3 rs=25 qf=10.0 rf=120 sm=40 vm=170 k=3
+0.0435  W30=11  W50=11  Med=552.9  st=35 sb=130 ss=4.0 qs=0.8 rs=10 qf=10.0 rf=70 sm=50 vm=175 k=4
+0.0435  W30=11  W50=11  Med=634.6  st=40 sb=130 ss=10.0 qs=1.5 rs=20 qf=10.0 rf=120 sm=45 vm=175 k=2
+0.0422  W30=10  W50=12  Med=574.3  st=40 sb=100 ss=10.0 qs=0.2 rs=10 qf=2.0 rf=200 sm=45 vm=170 k=4
+0.0408  W30=10  W50=11  Med=485.9  st=48 sb=130 ss=6.0 qs=0.1 rs=20 qf=15.0 rf=200 sm=50 vm=170 k=4
+0.0408  W30=10  W50=11  Med=531.1  st=30 sb=80 ss=6.0 qs=0.8 rs=60 qf=2.0 rf=120 sm=50 vm=175 k=3
+0.0408  W30=10  W50=11  Med=494.5  st=40 sb=160 ss=8.0 qs=1.5 rs=60 qf=10.0 rf=40 sm=45 vm=160 k=3
+0.0395  W30=10  W50=10  Med=593.2  st=38 sb=75 ss=5.0 qs=0.15 rs=15 qf=5.0 rf=50 sm=35 vm=175 k=3
+0.0395  W30=10  W50=10  Med=620.6  st=35 sb=130 ss=4.0 qs=1.5 rs=35 qf=10.0 rf=120 sm=55 vm=160 k=2
+0.0395  W30=10  W50=10  Med=472.2  st=35 sb=60 ss=5.0 qs=0.8 rs=100 qf=2.0 rf=200 sm=45 vm=180 k=3
+0.0369  W30=9  W50=10  Med=542.6  st=48 sb=60 ss=8.0 qs=0.4 rs=60 qf=4.0 rf=70 sm=45 vm=170 k=4
