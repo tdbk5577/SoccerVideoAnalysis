@@ -1,0 +1,23 @@
+V7f Winner: score=0.8419 w30=211 w50=217 med=3.6
+Params: {'min_conf': 0.12, 'hard_reset_conf': 0.5, 'speed_limit': 120, 'vel_decay': 0.95, 'abc_ratio': 0.7, 'hc_thresh': 0.65, 'chain_margin': 400, 'gap_margin': 320, 'min_gap_for_filter': 6, 'interp_max_gap': 100, 'y_off': 47, 'x_off': -5, 'person_accept_r': 200, 'person_conf_min': 0.25, 'use_kalman_smooth': False, 'kalman_q': 0.2}
+
+0.8419  W30=211  W50=217  Med=3.6  mc=0.12 hrc=0.50 sl=120 hc=0.65 cm=400 gm=320 mgf=6 ig=100 yo=47
+0.8353  W30=209  W50=216  Med=3.6  mc=0.12 hrc=0.45 sl=80 hc=0.60 cm=350 gm=240 mgf=12 ig=100 yo=65
+0.8340  W30=210  W50=213  Med=3.6  mc=0.12 hrc=0.55 sl=80 hc=0.50 cm=200 gm=300 mgf=8 ig=150 yo=65
+0.8340  W30=209  W50=215  Med=3.2  mc=0.10 hrc=0.55 sl=100 hc=0.65 cm=400 gm=280 mgf=10 ig=100 yo=54
+0.8327  W30=210  W50=212  Med=3.6  mc=0.12 hrc=0.60 sl=120 hc=0.60 cm=250 gm=280 mgf=5 ig=150 yo=47
+0.8327  W30=208  W50=216  Med=3.6  mc=0.10 hrc=0.60 sl=150 hc=0.55 cm=200 gm=220 mgf=12 ig=100 yo=65
+0.8314  W30=209  W50=213  Med=3.2  mc=0.10 hrc=0.55 sl=80 hc=0.60 cm=350 gm=240 mgf=8 ig=100 yo=65
+0.8314  W30=209  W50=213  Med=3.2  mc=0.10 hrc=0.45 sl=80 hc=0.50 cm=250 gm=240 mgf=10 ig=150 yo=65
+0.8300  W30=208  W50=214  Med=3.2  mc=0.10 hrc=0.55 sl=150 hc=0.55 cm=300 gm=260 mgf=8 ig=100 yo=58
+0.8287  W30=209  W50=211  Med=3.6  mc=0.12 hrc=0.60 sl=120 hc=0.60 cm=300 gm=320 mgf=10 ig=150 yo=51
+0.8261  W30=207  W50=213  Med=3.6  mc=0.10 hrc=0.50 sl=100 hc=0.65 cm=350 gm=280 mgf=8 ig=100 yo=47
+0.8261  W30=208  W50=211  Med=3.2  mc=0.15 hrc=0.50 sl=100 hc=0.50 cm=350 gm=220 mgf=8 ig=150 yo=54
+0.8261  W30=207  W50=213  Med=3.6  mc=0.10 hrc=0.45 sl=150 hc=0.65 cm=200 gm=220 mgf=8 ig=80 yo=65
+0.8261  W30=208  W50=211  Med=3.6  mc=0.10 hrc=0.60 sl=120 hc=0.60 cm=250 gm=260 mgf=10 ig=150 yo=65
+0.8248  W30=207  W50=212  Med=3.6  mc=0.15 hrc=0.45 sl=80 hc=0.60 cm=400 gm=300 mgf=15 ig=80 yo=58
+0.8248  W30=207  W50=212  Med=3.6  mc=0.10 hrc=0.45 sl=100 hc=0.65 cm=250 gm=220 mgf=15 ig=120 yo=58
+0.8221  W30=207  W50=210  Med=3.6  mc=0.12 hrc=0.45 sl=100 hc=0.50 cm=300 gm=240 mgf=5 ig=120 yo=65
+0.8221  W30=206  W50=212  Med=3.6  mc=0.10 hrc=0.45 sl=200 hc=0.65 cm=350 gm=240 mgf=5 ig=80 yo=58
+0.8208  W30=206  W50=211  Med=3.2  mc=0.12 hrc=0.50 sl=100 hc=0.65 cm=250 gm=300 mgf=12 ig=120 yo=65
+0.8195  W30=206  W50=210  Med=3.6  mc=0.10 hrc=0.60 sl=80 hc=0.55 cm=300 gm=220 mgf=10 ig=100 yo=58

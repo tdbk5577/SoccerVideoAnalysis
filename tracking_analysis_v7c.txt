@@ -1,0 +1,23 @@
+V7c Winner: score=0.8208 w30=207 w50=209 med=4.1
+Params: {'min_conf': 0.3, 'hard_reset_conf': 0.6, 'speed_limit': 300, 'vel_decay': 0.9, 'abc_ratio': 0.7, 'gap_margin': 200, 'min_gap_for_filter': 25, 'interp_max_gap': 80, 'y_off': 44, 'x_off': 0, 'person_accept_r': 60, 'person_conf_min': 0.25, 'use_kalman_smooth': True, 'kalman_q': 0.5}
+
+0.8208  W30=207  W50=209  Med=4.1  mc=0.30 sl=300 abc=0.7 gm=200 ig=80 yo=44
+0.8169  W30=206  W50=208  Med=3.6  mc=0.30 sl=300 abc=0.7 gm=60 ig=100 yo=58
+0.8142  W30=205  W50=208  Med=4.1  mc=0.30 sl=300 abc=0.5 gm=100 ig=80 yo=54
+0.8050  W30=203  W50=205  Med=4.1  mc=0.30 sl=150 abc=0.5 gm=120 ig=120 yo=58
+0.8011  W30=202  W50=204  Med=4.1  mc=0.30 sl=120 abc=0.4 gm=80 ig=100 yo=44
+0.8011  W30=202  W50=204  Med=4.1  mc=0.30 sl=120 abc=0.3 gm=120 ig=60 yo=47
+0.7945  W30=200  W50=203  Med=4.1  mc=0.30 sl=400 abc=0.4 gm=80 ig=120 yo=44
+0.7945  W30=200  W50=203  Med=4.1  mc=0.30 sl=200 abc=0.6 gm=100 ig=150 yo=44
+0.7931  W30=200  W50=202  Med=4.1  mc=0.30 sl=400 abc=0.6 gm=200 ig=40 yo=47
+0.7931  W30=200  W50=202  Med=4.1  mc=0.30 sl=300 abc=0.3 gm=80 ig=40 yo=58
+0.7931  W30=200  W50=202  Med=4.1  mc=0.30 sl=200 abc=0.8 gm=150 ig=40 yo=44
+0.7931  W30=200  W50=202  Med=3.6  mc=0.30 sl=300 abc=0.4 gm=200 ig=120 yo=54
+0.7866  W30=198  W50=201  Med=4.0  mc=0.30 sl=200 abc=0.5 gm=200 ig=40 yo=65
+0.7312  W30=183  W50=189  Med=4.0  mc=0.20 sl=120 abc=0.8 gm=80 ig=80 yo=58
+0.7312  W30=183  W50=189  Med=3.6  mc=0.20 sl=120 abc=0.7 gm=120 ig=40 yo=65
+0.7246  W30=182  W50=186  Med=4.0  mc=0.20 sl=300 abc=0.8 gm=100 ig=80 yo=51
+0.6877  W30=173  W50=176  Med=3.6  mc=0.15 sl=120 abc=0.8 gm=120 ig=100 yo=58
+0.6785  W30=170  W50=175  Med=4.0  mc=0.20 sl=120 abc=0.6 gm=150 ig=100 yo=54
+0.6759  W30=169  W50=175  Med=4.1  mc=0.20 sl=200 abc=0.5 gm=100 ig=100 yo=44
+0.6759  W30=170  W50=173  Med=3.6  mc=0.15 sl=200 abc=0.5 gm=60 ig=100 yo=58

@@ -1,0 +1,23 @@
+V7e Winner: score=0.8432 w30=211 w50=218 med=3.6
+Params: {'min_conf': 0.1, 'hard_reset_conf': 0.3, 'speed_limit': 100, 'vel_decay': 0.95, 'abc_ratio': 0.7, 'hc_thresh': 0.6, 'chain_margin': 350, 'gap_margin': 400, 'min_gap_for_filter': 15, 'interp_max_gap': 120, 'y_off': 58, 'x_off': 0, 'person_accept_r': 120, 'person_conf_min': 0.25, 'use_kalman_smooth': True, 'kalman_q': 5.0}
+
+0.8432  W30=211  W50=218  Med=3.6  mc=0.10 sl=100 hc=0.60 cm=350 gm=400 ig=120 yo=58
+0.8419  W30=211  W50=217  Med=3.6  mc=0.10 sl=120 hc=0.65 cm=250 gm=350 ig=60 yo=47
+0.8327  W30=209  W50=214  Med=3.6  mc=0.15 sl=300 hc=0.65 cm=500 gm=280 ig=100 yo=47
+0.8327  W30=208  W50=216  Med=3.6  mc=0.12 sl=120 hc=0.60 cm=500 gm=200 ig=120 yo=47
+0.8314  W30=209  W50=213  Med=3.6  mc=0.10 sl=120 hc=0.60 cm=300 gm=400 ig=150 yo=54
+0.8300  W30=208  W50=214  Med=3.6  mc=0.15 sl=250 hc=0.65 cm=200 gm=280 ig=150 yo=65
+0.8300  W30=208  W50=214  Med=3.6  mc=0.10 sl=100 hc=0.65 cm=280 gm=400 ig=100 yo=54
+0.8274  W30=207  W50=214  Med=3.6  mc=0.12 sl=100 hc=0.55 cm=400 gm=350 ig=120 yo=65
+0.8274  W30=207  W50=214  Med=3.2  mc=0.12 sl=250 hc=0.55 cm=400 gm=300 ig=150 yo=58
+0.8248  W30=207  W50=212  Med=3.6  mc=0.15 sl=250 hc=0.55 cm=400 gm=350 ig=120 yo=47
+0.8195  W30=206  W50=210  Med=3.6  mc=0.10 sl=100 hc=0.55 cm=280 gm=250 ig=100 yo=65
+0.8182  W30=205  W50=211  Med=4.0  mc=0.15 sl=200 hc=0.65 cm=280 gm=400 ig=60 yo=65
+0.8169  W30=205  W50=210  Med=4.0  mc=0.20 sl=100 hc=0.40 cm=500 gm=350 ig=150 yo=47
+0.8169  W30=205  W50=210  Med=3.6  mc=0.10 sl=100 hc=0.65 cm=200 gm=300 ig=80 yo=51
+0.8142  W30=205  W50=208  Med=3.6  mc=0.12 sl=100 hc=0.65 cm=400 gm=280 ig=100 yo=54
+0.8129  W30=205  W50=207  Med=3.6  mc=0.15 sl=120 hc=0.55 cm=200 gm=200 ig=120 yo=58
+0.8129  W30=205  W50=207  Med=3.6  mc=0.12 sl=200 hc=0.50 cm=250 gm=200 ig=100 yo=51
+0.8129  W30=205  W50=207  Med=3.6  mc=0.15 sl=300 hc=0.50 cm=300 gm=280 ig=60 yo=51
+0.8116  W30=203  W50=210  Med=4.0  mc=0.20 sl=120 hc=0.60 cm=350 gm=350 ig=100 yo=58
+0.8116  W30=203  W50=210  Med=3.6  mc=0.15 sl=100 hc=0.45 cm=250 gm=280 ig=100 yo=58

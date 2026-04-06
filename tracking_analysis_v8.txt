@@ -1,0 +1,41 @@
+V8 Winner: score=0.0000 w30=0 w50=0 med=618.9
+Params: {'min_conf': 0.1, 'hard_reset_conf': 0.5, 'abc_protect_conf': 0.65, 'speed_limit': 5.0, 'vel_decay': 0.85, 'abc_ratio': 0.6, 'hc_thresh': 0.55, 'chain_margin': 5.0, 'gap_margin': 4.0, 'min_gap_for_filter': 6, 'interp_max_gap': 100, 'person_accept_r': 3.0, 'person_conf_min': 0.3, 'use_kalman_smooth': True, 'kalman_q': 0.1}
+
+0.0000  W30=0  W50=0  Med=618.9  hand_0
+0.0000  W30=0  W50=0  Med=652.6  hand_1
+0.0000  W30=0  W50=0  Med=670.1  hand_2
+0.0000  W30=0  W50=0  Med=635.3  hand_3
+0.0000  W30=0  W50=0  Med=618.9  hand_4
+0.0000  W30=0  W50=0  Med=618.9  hand_5
+0.0000  W30=0  W50=0  Med=637.0  hand_6
+0.0000  W30=0  W50=0  Med=618.9  hand_7
+0.0000  W30=0  W50=0  Med=616.8  rand_0
+0.0000  W30=0  W50=0  Med=620.2  rand_1
+0.0000  W30=0  W50=0  Med=701.5  rand_2
+0.0000  W30=0  W50=0  Med=672.5  rand_3
+0.0000  W30=0  W50=0  Med=643.1  rand_4
+0.0000  W30=0  W50=0  Med=646.1  rand_5
+0.0000  W30=0  W50=0  Med=655.8  rand_6
+0.0000  W30=0  W50=0  Med=662.4  rand_7
+0.0000  W30=0  W50=0  Med=638.8  rand_8
+0.0000  W30=0  W50=0  Med=671.3  rand_9
+0.0000  W30=0  W50=0  Med=603.5  rand_10
+0.0000  W30=0  W50=0  Med=705.9  rand_11
+0.0000  W30=0  W50=0  Med=673.3  rand_12
+0.0000  W30=0  W50=0  Med=675.1  rand_13
+0.0000  W30=0  W50=0  Med=667.0  rand_14
+0.0000  W30=0  W50=0  Med=666.4  rand_15
+0.0000  W30=0  W50=0  Med=652.7  rand_16
+0.0000  W30=0  W50=0  Med=635.0  rand_17
+0.0000  W30=0  W50=0  Med=626.4  rand_18
+0.0000  W30=0  W50=0  Med=652.9  rand_19
+0.0000  W30=0  W50=0  Med=659.3  rand_20
+0.0000  W30=0  W50=0  Med=678.8  rand_21
+0.0000  W30=0  W50=0  Med=676.0  rand_22
+0.0000  W30=0  W50=0  Med=689.7  rand_23
+0.0000  W30=0  W50=0  Med=642.0  rand_24
+0.0000  W30=0  W50=0  Med=684.3  rand_25
+0.0000  W30=0  W50=0  Med=644.9  rand_26
+0.0000  W30=0  W50=0  Med=657.6  rand_27
+0.0000  W30=0  W50=0  Med=709.5  rand_28
+0.0000  W30=0  W50=0  Med=642.4  rand_29
