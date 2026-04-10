@@ -230,7 +230,7 @@ def build_samples(labels_path, yolo_cache_path, frames_dir,
             gt[f15] = (lb['px'], lb['py'])
     print(f'  GT labels: {len(gt)} (remapped to {fps}fps frame indices)')
 
-    # Optional YOLO pseudo-labels (skipped when no cache provided)
+    # YOLO pseudo-labels: high-confidence ball detections not in GT
     pseudo = {}
     if yolo_cache_path and os.path.exists(yolo_cache_path):
         with open(yolo_cache_path) as f:
@@ -248,7 +248,7 @@ def build_samples(labels_path, yolo_cache_path, frames_dir,
                 pseudo[fi] = best_ball
         print(f'  YOLO pseudo-labels (conf>{pseudo_conf}): {len(pseudo)}')
     else:
-        print(f'  Training on GT labels only (no pseudo-label cache)')
+        print(f'  No YOLO cache found — training on GT only')
 
     # Build sample list
     samples = []
