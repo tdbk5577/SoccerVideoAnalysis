@@ -34,7 +34,11 @@
       "Bash(.venv/bin/python3 run_test1.py --render > run_test1.log 2>&1)",
       "Bash(.venv/bin/python3 analyze_tracking_v8.py --video \"test 1.mp4\" --labels ball_labels.json --cache yolo_cache_test1.json --calibration calibration_test1.json --frames-dir /tmp/soccer_test1_frames --render --output tracking_test1_v8.mp4 > tracking_analysis_v8_test1.log 2>&1)",
       "Bash(.venv/bin/python3 - << 'EOF'\nimport json, numpy as np, cv2\n\ncal = json.load\\(open\\('calibration_test1.json'\\)\\)\nH = np.array\\(cal['H'], dtype=np.float64\\)\n\ndef to_world\\(px, py\\):\n    pt = np.array\\([[[float\\(px\\), float\\(py\\)]]], dtype=np.float64\\)\n    return cv2.perspectiveTransform\\(pt, H\\)[0][0]\n\n# Check where the FP cluster maps to in world space\n# FPs at f850-940: predictions around x=1400-1700, y=460-510\nprint\\(\"FP cluster \\(x=1400-1700, y=480\\):\"\\)\nfor px in [1400, 1500, 1600, 1700, 1800]:\n    w = to_world\\(px, 480\\)\n    print\\(f\"  pixel=\\({px},480\\) -> world=\\({w[0]:.1f},{w[1]:.1f}\\)m\"\\)\n\nprint\\(\"\\\\nActual ball positions f850-940 \\(gt around x=600-1100, y=460-520\\):\"\\)\nfor px in [600, 700, 800, 900, 1000, 1100]:\n    w = to_world\\(px, 490\\)\n    print\\(f\"  pixel=\\({px},490\\) -> world=\\({w[0]:.1f},{w[1]:.1f}\\)m\"\\)\n\nprint\\(\"\\\\nField bounds for 11v11: X in [-34,34]m, Y in [0,105]m\"\\)\nEOF)",
-      "Bash(.venv/bin/python3 analyze_tracking_v8.py --video \"test 1.mp4\" --labels ball_labels.json --cache yolo_cache_test1.json --calibration calibration_test1.json --frames-dir /tmp/soccer_test1_frames --render --output tracking_test1_v8_bidir.mp4 --analysis-out tracking_analysis_v8_bidir.txt > tracking_analysis_v8_bidir.log 2>&1)"
+      "Bash(.venv/bin/python3 analyze_tracking_v8.py --video \"test 1.mp4\" --labels ball_labels.json --cache yolo_cache_test1.json --calibration calibration_test1.json --frames-dir /tmp/soccer_test1_frames --render --output tracking_test1_v8_bidir.mp4 --analysis-out tracking_analysis_v8_bidir.txt > tracking_analysis_v8_bidir.log 2>&1)",
+      "Bash(.venv/bin/python3:*)",
+      "Bash(tee build_15fps_log.txt)",
+      "Bash(pkill -f \"build_cache_15fps\")",
+      "Bash(pkill -f \"yolov8\")"
     ]
   }
 }
