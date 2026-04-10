@@ -1,0 +1,25 @@
+# Large video outputs — too big for GitHub
+*.mp4
+*.avi
+*.mov
+
+# YOLO model weights
+*.pt
+
+# Generated caches and model checkpoints
+yolo_cache*.json
+tracknet_cache*.json
+tracknet_model.pth
+calibration*.json
+
+# Extracted frame directories
+frames_*/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Logs
+*.log
+*.txt.bak
