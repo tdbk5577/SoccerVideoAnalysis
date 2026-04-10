@@ -80,30 +80,18 @@ def remap_labels_15fps(labels_data, fps=FPS):
     return out
 
 
-def remap_persons_to_15fps(cache_10fps, n_frames_15fps, fps_15=15.0, fps_10=10.0):
+def build_merged_cache(tracknet_cache, yolo_cache):
     """
-    Build a 15fps person lookup by mapping each 15fps frame index to the
-    nearest 10fps frame index and copying its person detections.
+    Merge TrackNet ball detections with YOLO person detections.
 
-    Person positions change negligibly over ≤1/15s so this is accurate enough
-    for the world-space proximity check in fill_gaps().
+    TrackNet cache has 'balls' keys only.
+    YOLO cache has both 'balls' and 'persons'; we take persons from YOLO.
     """
-    persons_15 = {}
-    for f15 in range(n_frames_15fps):
-        f10 = int(round(f15 * fps_10 / fps_15))
-        persons_15[f15] = cache_10fps.get(f10, {}).get('persons', [])
-    return persons_15
-
-
-def build_merged_cache(tracknet_cache, persons_15fps):
-    """
-    Merge TrackNet ball detections with remapped 10fps person detections.
-    """
-    all_frames = set(tracknet_cache.keys()) | set(persons_15fps.keys())
+    all_frames = set(tracknet_cache.keys()) | set(yolo_cache.keys())
     merged = {}
     for f in all_frames:
-        balls   = tracknet_cache.get(f, {}).get('balls', [])
-        persons = persons_15fps.get(f, [])
+        balls   = tracknet_cache.get(f, {}).get('balls',   [])
+        persons = yolo_cache.get(f, {}).get('persons', [])
         merged[f] = {'balls': balls, 'persons': persons}
     return merged
 
@@ -129,8 +117,8 @@ def main():
     ap.add_argument('--labels',          required=True)
     ap.add_argument('--tracknet_cache',  required=True,
                     help='Ball detections from TrackNet (tracknet_cache_15fps.json)')
-    ap.add_argument('--yolo_cache_10fps', default='yolo_cache_test1.json',
-                    help='Existing 10fps YOLO cache for person detections (default: yolo_cache_test1.json)')
+    ap.add_argument('--yolo_cache',      required=True,
+                    help='Person detections from YOLO (yolo_cache_test1_15fps.json)')
     ap.add_argument('--calibration',     required=True)
     ap.add_argument('--frames-dir',      default=FRAMES_DIR)
     ap.add_argument('--render',          action='store_true')
@@ -158,13 +146,12 @@ def main():
     tracknet_cache = load_cache(args.tracknet_cache)
     print(f'  {len(tracknet_cache)} frames')
 
-    print(f'Loading 10fps YOLO cache for persons: {args.yolo_cache_10fps}')
-    yolo_cache_10fps = load_cache(args.yolo_cache_10fps)
-    print(f'  {len(yolo_cache_10fps)} frames')
+    print(f'Loading YOLO cache (persons): {args.yolo_cache}')
+    yolo_cache = load_cache(args.yolo_cache)
+    print(f'  {len(yolo_cache)} frames')
 
-    persons_15fps = remap_persons_to_15fps(yolo_cache_10fps, len(frames))
-    cache = build_merged_cache(tracknet_cache, persons_15fps)
-    print(f'Merged cache: {len(cache)} frames (TrackNet balls + remapped 10fps persons)')
+    cache = build_merged_cache(tracknet_cache, yolo_cache)
+    print(f'Merged cache: {len(cache)} frames')
 
     ball_det_count = sum(len(v['balls']) for v in cache.values())
     high_conf      = sum(1 for v in cache.values()
