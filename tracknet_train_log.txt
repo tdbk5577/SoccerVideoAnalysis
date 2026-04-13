@@ -1,0 +1,84 @@
+Device: mps
+Building training samples...
+  GT labels: 302 (remapped to 15.0fps frame indices)
+  Training on GT labels only (no pseudo-label cache)
+  Total: 302 samples
+  Train: 271  Val: 31
+TrackNet parameters: 5,081,153
+Epoch   1/80  train=0.1314  val=0.0876  lr=1.0e-04  t=122s  ← saved (tracknet_model.pth)
+Epoch   5/80  train=0.0487  val=0.0463  lr=9.9e-05  t=603s  ← saved (tracknet_model.pth)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=9, pipe_handle=23)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 254, in _get_code_from_file
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/tracknet.py'
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=9, pipe_handle=68)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 254, in _get_code_from_file
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/tracknet.py'
+Traceback (most recent call last):
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1310, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/queues.py", line 111, in get
+    if not self._poll(timeout):
+           ~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/connection.py", line 440, in _poll
+    r = wait([self], timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/connection.py", line 1148, in wait
+    ready = selector.select(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/selectors.py", line 398, in select
+    fd_event_list = self._selector.poll(timeout)
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/.venv/lib/python3.13/site-packages/torch/utils/data/_utils/signal_handling.py", line 73, in handler
+    _error_if_any_worker_fails()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: DataLoader worker (pid 90096) exited unexpectedly with exit code 1. Details are lost due to multiprocessing. Rerunning with num_workers=0 may give better error trace.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/tracknet.py", line 476, in <module>
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/tracknet.py", line 468, in main
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/tracknet.py", line 340, in train
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 741, in __next__
+    data = self._next_data()
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1524, in _next_data
+    idx, data = self._get_data()
+                ~~~~~~~~~~~~~~^^
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1483, in _get_data
+    success, data = self._try_get_data()
+                    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/davidlebar/PycharmProjects/SoccerVideoAnalysis/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1323, in _try_get_data
+    raise RuntimeError(
+        f"DataLoader worker (pid(s) {pids_str}) exited unexpectedly"
+    ) from e
+RuntimeError: DataLoader worker (pid(s) 90096, 90097) exited unexpectedly
