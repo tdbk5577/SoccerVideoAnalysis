@@ -1,0 +1,24 @@
+Device: mps
+  252 training samples from 253 GT labels
+  Train: 226  Val: 26
+TrackNet parameters: 5,081,153
+Resumed from tracknet_model.pth
+Epoch   1/80  train=0.0616  val=0.0576  lr=1.0e-04  t=87s  ← saved
+Epoch   5/80  train=0.0516  val=0.0520  lr=9.9e-05  t=432s  ← saved
+Epoch  10/80  train=0.0472  val=0.0507  lr=9.6e-05  t=871s
+Epoch  15/80  train=0.0403  val=0.0528  lr=9.2e-05  t=1301s
+Epoch  20/80  train=0.0326  val=0.0650  lr=8.6e-05  t=1736s
+Epoch  25/80  train=0.0250  val=0.0875  lr=7.8e-05  t=2166s
+Epoch  30/80  train=0.0205  val=0.0989  lr=6.9e-05  t=2595s
+Epoch  35/80  train=0.0122  val=0.0989  lr=6.0e-05  t=3024s
+Epoch  40/80  train=0.0088  val=0.1099  lr=5.1e-05  t=3452s
+Epoch  45/80  train=0.0078  val=0.1196  lr=4.1e-05  t=3882s
+Epoch  50/80  train=0.0061  val=0.1238  lr=3.2e-05  t=4311s
+Epoch  55/80  train=0.0059  val=0.1260  lr=2.3e-05  t=4741s
+Epoch  60/80  train=0.0053  val=0.1334  lr=1.5e-05  t=5171s
+Epoch  65/80  train=0.0050  val=0.1358  lr=9.3e-06  t=5602s
+Epoch  70/80  train=0.0047  val=0.1383  lr=4.8e-06  t=6032s
+Epoch  75/80  train=0.0046  val=0.1386  lr=2.0e-06  t=6461s
+Epoch  80/80  train=0.0045  val=0.1401  lr=1.0e-06  t=6890s
+
+Done. Best val=0.0504  Model: tracknet_model.pth

@@ -38,6 +38,8 @@ def main():
                         help="Extraction FPS (default: 10)")
     parser.add_argument("--output", default="ball_labels.json",
                         help="Output file (default: ball_labels.json)")
+    parser.add_argument("--load", default=None,
+                        help="Pre-load existing labels from this file (merges on save)")
     args = parser.parse_args()
 
     with tempfile.TemporaryDirectory() as tmpdir:
@@ -69,6 +71,19 @@ def main():
         indices = list(range(0, total, step))
         labels  = {}   # frame_idx -> {"px": x, "py": y, "t": seconds}
         clicked = {}   # current display-space click per frame
+
+        # Pre-load existing labels if requested
+        if args.load and os.path.exists(args.load):
+            with open(args.load) as lf:
+                existing = json.load(lf)
+            loaded_fps = existing.get("fps", args.fps)
+            for lb in existing.get("labels", []):
+                # Remap frame index to current fps
+                t = lb["t"]
+                new_idx = int(round(t * args.fps))
+                labels[new_idx] = {"px": lb["px"], "py": lb["py"], "t": round(t, 3)}
+                clicked[new_idx] = (int(lb["px"] * scale), int(lb["py"] * scale))
+            print(f"Pre-loaded {len(labels)} labels from {args.load}")
 
         cv2.namedWindow("Label Ball", cv2.WINDOW_NORMAL)
         cv2.resizeWindow("Label Ball", dw, dh)
